@@ -1,0 +1,82 @@
+@import '../../Partials/_mixins.scss';
+@import '../../Partials/_variables.scss';
+
+.mainVideo {
+    &__video{
+        width: 100%;
+        height: auto;
+        position: relative;
+        @include tablet {
+            width: 700px;
+            padding: 0 34px;
+            background-color: black;
+        }
+        @include desktop {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0 128px;
+            
+        }
+    }
+    &__flex{
+        display: flex;
+        position: absolute;
+        top: 315px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 16px;
+        @include tablet {
+            padding: 0 42px;
+            top: 430px;
+        }
+        @include desktop {
+            padding: 0 144px;
+            top: 570px;
+        }
+        &--play{
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 5px 15px;
+            margin-right: 8px;
+            border-radius: 4px;
+            @include tablet{
+                margin-right: 16px;
+            }
+        }
+        &--scrub{
+            background-color: rgba(0, 0, 0, 0.5);
+            content: none;
+            width: 100%;
+            margin-right: 8px;
+            border-radius: 4px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            @include tablet{
+                margin-right: 16px;
+            }
+            &--inside{
+                box-sizing: border-box;
+                border: solid 2px black;
+                display: flex;
+                border-radius: 4px;
+                justify-items: center;
+                width: 100%;
+                height: 1px;
+                content: "";
+            }
+        }
+        &--block{
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            border-radius: 4px;
+            width: 70px;
+            &__fullscreen{
+                padding: 5px 10px;
+            }
+            &__volume{
+                padding: 5px 5px;
+            }
+        }
+    }
+}

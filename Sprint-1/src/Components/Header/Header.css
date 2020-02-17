@@ -1,0 +1,129 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 169px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0 24px;
+    height: 80px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 0 128px;
+  }
+}
+
+.header__text {
+  padding: 0 16px 8px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .header__text {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 16px 24px 16px 169px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__text {
+    padding-left: 300px;
+  }
+}
+
+.header__text--1 {
+  width: 100%;
+  border-radius: 4px;
+  border: solid 2px #AFAFAF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px 40px;
+  background: url("../../../assets/Icons/SVG/Icon-search.svg") left no-repeat;
+  background-position-x: 15px;
+}
+
+.header__image {
+  padding: 12px 0;
+}
+
+.header__display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .header__display {
+    padding: 0;
+    width: auto;
+  }
+}
+
+.header__display--image {
+  width: 45px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.header__display--button {
+  margin-right: 16px;
+  width: 100%;
+  border-radius: 4px;
+  border: none;
+  background-color: #0095FF;
+  padding-left: 20px;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .header__display--button {
+    width: 100px;
+    padding: 0;
+    margin: 0;
+    margin-right: 24px;
+  }
+}
+
+.header__display--button-image {
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .header__display--button-image {
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=Header.css.map */

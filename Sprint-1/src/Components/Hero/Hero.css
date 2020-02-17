@@ -1,0 +1,116 @@
+.mainVideo__video {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .mainVideo__video {
+    width: 700px;
+    padding: 0 34px;
+    background-color: black;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mainVideo__video {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0 128px;
+  }
+}
+
+.mainVideo__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 315px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .mainVideo__flex {
+    padding: 0 42px;
+    top: 430px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mainVideo__flex {
+    padding: 0 144px;
+    top: 570px;
+  }
+}
+
+.mainVideo__flex--play {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 15px;
+  margin-right: 8px;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .mainVideo__flex--play {
+    margin-right: 16px;
+  }
+}
+
+.mainVideo__flex--scrub {
+  background-color: rgba(0, 0, 0, 0.5);
+  content: none;
+  width: 100%;
+  margin-right: 8px;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .mainVideo__flex--scrub {
+    margin-right: 16px;
+  }
+}
+
+.mainVideo__flex--scrub--inside {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: solid 2px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  justify-items: center;
+  width: 100%;
+  height: 1px;
+  content: "";
+}
+
+.mainVideo__flex--block {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  width: 70px;
+}
+
+.mainVideo__flex--block__fullscreen {
+  padding: 5px 10px;
+}
+
+.mainVideo__flex--block__volume {
+  padding: 5px 5px;
+}
+/*# sourceMappingURL=Hero.css.map */
