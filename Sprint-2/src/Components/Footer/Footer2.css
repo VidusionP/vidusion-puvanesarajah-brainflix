@@ -1,0 +1,61 @@
+.footer1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer1 {
+    margin-top: 40px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer1 {
+    width: 100%;
+    padding: 0 128px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+.footer1__button {
+  width: 100%;
+  border-radius: 6px;
+  border: none;
+  background-color: #0095FF;
+  color: #FFFFFF;
+  height: 50px;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer1__button {
+    width: 160px;
+    margin-left: 48px;
+  }
+}
+
+.footer1__cancel {
+  padding: 24px 0;
+  color: #0095FF;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 900;
+}
+/*# sourceMappingURL=Footer2.css.map */

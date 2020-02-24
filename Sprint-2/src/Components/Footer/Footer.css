@@ -1,0 +1,74 @@
+p {
+  margin: 0;
+}
+
+.footer {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 16px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    display: inline-block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 350px;
+    border-left: 2px solid #AFAFAF;
+  }
+}
+
+.footer__title {
+  border-top: 2px solid #AFAFAF;
+  padding: 40px 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__title {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    border: unset;
+    padding-bottom: 40px;
+  }
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.footer__list--image {
+  width: 120px;
+  height: 70px;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__list {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
+.footer__list--content {
+  width: 152px;
+  margin-left: 16px;
+}
+
+.footer__list--content-title {
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.footer__list--content-channel {
+  margin-top: 16px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=Footer.css.map */

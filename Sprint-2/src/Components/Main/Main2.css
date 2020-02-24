@@ -1,0 +1,129 @@
+.main1 {
+  padding: 0 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .main1 {
+    margin: 0 24px 0;
+    border-bottom: 4px solid black;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 40px;
+    margin: 0 128px 0;
+  }
+}
+
+.main1__title {
+  color: gray;
+  margin: 32px 0 5px;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .main1__title {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main1__title {
+    margin-top: 0;
+  }
+}
+
+.main1__title2 {
+  color: gray;
+  margin: 24px 0 5px;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .main1__title2 {
+    margin-top: 24px;
+  }
+}
+
+.main1__videoText {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 2px solid #9e9c9c;
+  background-color: #f1eded;
+}
+
+.main1__videoDesc {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 143px;
+  padding: 10px 0 0 10px;
+  border-radius: 5px;
+  border: 2px solid #9e9c9c;
+  margin-bottom: 32px;
+  background-color: #f1eded;
+}
+
+@media screen and (min-width: 768px) {
+  .main1__videoDesc {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main1__videoDesc {
+    margin-bottom: 0;
+    height: 94px;
+  }
+}
+
+.main1__image {
+  border-radius: 6%;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+  .main1__image {
+    width: 344px;
+    height: 183px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main1__div {
+    width: 100%;
+    margin-left: 24px;
+  }
+}
+
+.main1__thumbnail {
+  padding: 10px 0 5px 16px;
+  color: gray;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .main1__thumbnail {
+    padding-left: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main1__thumbnail {
+    padding: 0;
+    margin-bottom: 5px;
+  }
+}
+/*# sourceMappingURL=Main2.css.map */

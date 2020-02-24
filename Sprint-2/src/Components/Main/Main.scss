@@ -1,0 +1,186 @@
+@import '../../Partials/_mixins.scss';
+@import '../../Partials/_variables.scss';
+
+.mainTest {
+    @include desktop {
+        display: flex;
+    }
+}
+.main {
+    box-sizing: border-box;
+    margin: 0 16px;
+    @include tablet {
+        margin: 0 24px;
+    }
+    @include desktop {
+        margin: 0 0 0 100px;
+    }
+}
+.Comments{
+    box-sizing: border-box;
+    padding: 0 16px;
+    @include tablet{
+        padding: 0 34px;
+    }
+    @include desktop {
+        width: 100%;
+        display: inline-block;
+        padding: 0 0 0 100px;
+        
+    }
+    &__title{
+        padding-top: 32px;
+        margin: 0;
+        @include tablet{
+            padding-top: 48px;
+        }
+        @include desktop{
+            padding: unset;
+            margin: 40px 0;
+            font-size: 40px;
+        }
+    }
+    &__title2{
+        padding-top: 16px;
+        margin: 0;
+        @include tablet{
+            padding: 24px 0;
+            display: inline-flex;
+        }
+    }
+    &__title3{
+        margin: 0;
+        padding-bottom: 32px;
+    }
+    &__date{
+        padding-left: 8px;
+        margin: 0;
+        color: gray;
+    }
+    &__counter{
+        display: flex;
+        padding: 32px 0 24px;
+        
+        @include tablet{
+            display: inline-flex;
+            padding: 24px 0 24px 250px;
+        }
+        @include desktop {
+            padding: 0 32px 0 256px;
+            align-items: flex-start;
+        }
+        &--views{
+            padding-right: 8px;
+        }
+        &--likes{
+            padding: 0 8px 0 30px;
+            @include tablet{
+                padding-left: 24px;
+            }
+        }
+    }
+    &__para{
+        margin-left: 65px;
+        @include tablet{
+            padding-bottom: 10px;
+        }
+    }
+    &__description{
+        margin: 0;
+        padding: 24px 0 40px;
+        border-top: 2px solid #AFAFAF;
+        @include tablet{
+            padding: 40px 0 64px;
+        }
+        @include desktop {
+            padding-right: 100px;
+        }
+    }
+    &__box{
+        display: flex;
+        &--icon{
+            &--image{
+                width: 45px;
+                height: 40px;
+                border-radius: 50%;
+                margin-right: 20px;
+                
+            }
+        }
+        &--comment{
+            @include tablet{
+                display: flex;
+                width: 100%;
+            }
+            &--text{
+                box-sizing: border-box;
+                border: 3px solid #0095FF;
+                border-radius: 4px;
+                margin-bottom: 16px;
+                width: 100%;
+                height: 80px;
+                padding: 10px;
+                @include tablet{
+                    height: 40px;
+                    width: 440px;
+                }
+                @include desktop{
+                    width: 436px;
+                }
+            }
+            &--button{
+                border-radius: 4px;
+                border: none;
+                background-color: #0095FF;
+                color: white;
+                width: 100%;
+                height: 45px;
+                margin-bottom: 24px;
+                @include tablet{
+                    width: 160px;
+                    margin: 0 40px 24px 16px;
+                    height: 40px;
+                }
+                @include desktop {
+                    margin: 0 32px 0 16px;
+                }
+            }
+        }
+    }
+    &__comments{
+        &--test{
+            display: flex;
+            box-sizing: border-box;
+            border-top: 2px solid #AFAFAF;
+            padding: 20px 0;
+            &-circle{
+                width: 45px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: rgb(202, 202, 202);
+                margin-right: 20px;
+                @include tablet{
+                    width: 40px;
+                }
+            }
+            &-flex{
+                display: flex;
+                margin-bottom: 15px;
+                &--name{
+                    width: 100%;
+                    font-weight: 900;
+                    @include tablet{
+                        width: auto;
+                        padding-right: 20px;
+                    }
+                }
+            }
+        }
+        &--test1{
+            width: 100%;
+            @include tablet {
+                width: 624px;
+            }
+        }
+    }
+}

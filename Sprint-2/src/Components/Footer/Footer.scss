@@ -1,0 +1,51 @@
+@import '../../Partials/_mixins.scss';
+@import '../../Partials/_variables.scss';
+
+p{
+    margin: 0;
+}
+.footer{
+    box-sizing: border-box;
+    padding: 0 16px;
+    @include desktop {
+        display: inline-block;
+        flex-direction: column;
+        width: 350px;
+        border-left: 2px solid #AFAFAF;
+    }
+    &__title{
+        border-top: 2px solid #AFAFAF;
+        padding: 40px 0;
+        margin: 0;
+        
+        @include desktop {
+            display: inline-flex;
+            border: unset;
+            padding-bottom: 40px;
+        }
+    }
+    &__list{
+        display: flex;
+        margin-bottom: 24px;
+        &--image{
+            width: 120px;
+            height: 70px;
+            border-radius: 4px;
+        }
+        @include desktop {
+            display: inline-flex;
+        }
+        &--content{
+            width: 152px;
+            margin-left: 16px;
+            &-title{
+                font-weight: 900;
+                font-size: 14px;
+            }
+            &-channel{
+                margin-top: 16px;
+                font-size: 14px;
+            }
+        }
+    }
+}
