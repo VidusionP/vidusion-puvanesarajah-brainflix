@@ -1,0 +1,22 @@
+@import '../../Partials/_mixins.scss';
+@import '../../Partials/_variables.scss';
+
+.hero{
+    &__title {
+        font-weight: 900;
+        padding: 0 16px 0;
+        margin: 24px 0 32px 0;
+        box-sizing: border-box;
+        @include tablet {
+            padding: 48px 0 32px 0;
+            margin: 0 24px 40px ;
+            border-bottom: solid 4px black;
+            font-size: 32px;
+            
+        }
+        @include desktop {
+            margin: 0 128px 40px;
+        }
+    }
+    
+}

@@ -1,0 +1,14 @@
+/* .App {
+  text-align: center;
+} */
+@import './Styles/Home\ Page/Footer.scss';
+@import './Styles/Home\ Page/Header.scss';
+@import './Styles/Home\ Page/Main.scss';
+@import './Styles/Home\ Page/Hero.scss';
+@import './Partials/_fonts.scss';
+@import './Partials/_mixins.scss';
+@import './Partials/_variables.scss';
+
+*, body {
+  font-family: Avenir;
+}

@@ -1,0 +1,49 @@
+@import '../../Partials/_mixins.scss';
+@import '../../Partials/_variables.scss';
+
+.main{
+    &__comments {
+        box-sizing: border-box;
+        margin: 0 16px;
+        @include tablet {
+            margin: 0 24px;
+        }
+        @include desktop {
+            margin: 0 0 0 100px;
+        }
+        &--section{
+            display: flex;
+            box-sizing: border-box;
+            border-top: 2px solid #AFAFAF;
+            padding: 20px 0;
+            &--circle{
+                width: 45px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: rgb(202, 202, 202);
+                margin-right: 20px;
+                @include tablet{
+                    width: 40px;
+                }
+            }
+            &--box{
+                width: 100%;
+                @include tablet {
+                    width: 624px;
+                }
+                &--flex{
+                    display: flex;
+                    margin-bottom: 15px;
+                    &__name{
+                        width: 70%;
+                        font-weight: 900;
+                        @include tablet{
+                            width: auto;
+                            padding-right: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

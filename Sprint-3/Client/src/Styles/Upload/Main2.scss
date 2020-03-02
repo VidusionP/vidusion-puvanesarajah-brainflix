@@ -1,0 +1,91 @@
+@import '../../Partials/_mixins.scss';
+@import '../../Partials/_variables.scss';
+
+.main {
+    &__main {
+        padding: 0 16px;
+    @include tablet {
+        margin: 0 24px 0;
+        border-bottom: 4px solid black;
+        padding: 0;
+    }
+    @include desktop {
+        display: flex;
+        padding-bottom: 40px;
+        margin: 0 128px 0;
+    }
+        &--title {
+            color: gray;
+            margin: 32px 0 5px;
+            font-size: 12px;
+            @include tablet {
+                margin-top: 40px;
+            }
+            @include desktop {
+                margin-top: 0;
+            }
+        }
+        &--title2 {
+            color: gray;
+            margin: 24px 0 5px;
+            font-size: 12px;
+            @include desktop {
+                margin-top: 24px;
+            }
+        }
+        &--videoText {
+            box-sizing: border-box;
+            width: 100%;
+            height: 40px;
+            padding-left: 10px;
+            border-radius: 5px;
+            border: 2px solid rgb(158, 156, 156);
+            background-color: rgb(241, 237, 237);
+        }
+        &--videoDesc {
+            box-sizing: border-box;
+            width: 100%;
+            height: 143px;
+            padding: 10px 0 0 10px;
+            border-radius: 5px;
+            border: 2px solid rgb(158, 156, 156);
+            margin-bottom: 32px;
+            background-color: rgb(241, 237, 237);
+            @include tablet {
+                margin-bottom: 40px;
+            }
+            @include desktop {
+                margin-bottom: 0;
+                height: 94px;
+            }
+        }
+        &--image {
+            border-radius: 6%;
+            width: 100%;
+            box-sizing: border-box;
+            @include tablet {
+                width: 344px;
+                height: 183px;
+                padding: 0;
+            }
+        }
+        &--div{
+            @include desktop {
+                width: 100%;
+                margin-left: 24px;
+            }
+        }
+        &--thumbnail {
+            padding: 10px 0 5px 16px;
+            color: gray;
+            font-size: 12px;
+            @include tablet {
+                padding-left: 24px;
+            }
+            @include desktop {
+                padding: 0;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
